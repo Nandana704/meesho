@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Bootstrap Example</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Item Carousel Cards</title>
+        href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .dropbtn{background-color:white;
+        color:black;
+        padding:16px;
+        font-size:16px;
+        border:none;
+        cursor:pointer;}
+
+        .dropdown{position:relative;
+        display:inline-block;}
+
+        .dropdown-content{display:none;
+        position:absolute;
+        background-color:white;
+        min-width:150px;
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;}
+
+        .dropdown-content a{color:black;
+        padding:12px 16px;
+        text-decoration:none;
+        display:block;}
+
+        .dropdown-content a:hover{background-color:white;}
+
+        .dropdown:hover .dropdown-content{display:block;}
+
+        .dropbtn:hover{color:red;}
+        .c1{
+        height:100px; width:300px;border-bottom:2px solid #000000;
+        }
+      .c1:hover{
+      background-color:#ffcccb;
+      border-bottom:3px solid red;
+      }
+
+      
+    </style>
+
+  </head>
+  <body>
+
+
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg shadow mb-1" style="background-color:white;">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="oxygen.jpeg" alt="oxygen" width="150" height="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <b>All Categories</b>
+          </a>
+          <ul class="dropdown-menu">
+            <table class="table table-borderless table-responsive">
+              <tr>
+              <td><a class="dropdown-item" href="#"><img src="newarr.png" width="30" height="30">  New Arrivals</a></td>
+              <td><a class="dropdown-item" href="#"><img src="mobile.png" width="30" height="30">  Mobiles</a></td>
+              <td><a class="dropdown-item" href="#"><img src="tab.png" width="30" height="30">  Tablets</a></td>
+              <td><a class="dropdown-item" href="#"><img src="lap.png" width="30" height="30">  Laptops</a></td>
+              </tr>
+              <tr>
+              <td><a class="dropdown-item" href="#"><img src="iphone.png" width="30" height="30">  Apple</a></td>
+              <td><a class="dropdown-item" href="#"><img src="tv.png" width="30" height="30">  Television</a></td>
+              <td><a class="dropdown-item" href="#"><img src="fridge.png" width="30" height="30">  Refrigerators</a></td>
+              <td><a class="dropdown-item" href="#"><img src="washing.png" width="30" height="30">  Washing Machine</a></td>
+              </tr>
+              <tr>
+              <td><a class="dropdown-item" href="#"><img src="ac.png" width="30" height="30">  Air Conditioners</a></td>
+              <td><a class="dropdown-item" href="#"><img src="kitchen.png" width="30" height="30">  Kitchen Appliances</a></td>
+              <td><a class="dropdown-item" href="#"><img src="personal.png" width="30" height="30">  Personal Care</a></td>
+              <td><a class="dropdown-item" href="#"><img src="accesories.png" width="30" height="30">  Accessories</a></td>
+              </tr>
+              <tr>
+              <td><a class="dropdown-item" href="#"><img src="audio.png" width="30" height="30">  Audio</a></td>
+              <td><a class="dropdown-item" href="#"><img src="watch.png" width="30" height="30">  Smart Watches</a></td>
+              <td><a class="dropdown-item" href="#"><img src="printer.png" width="30" height="30">  Printer & Scanner</a></td>
+              <td><a class="dropdown-item" href="#"><img src="ram.png" width="30" height="30">  RAM</a></td>
+              </tr>
+              </table>
+          </ul>
+        </li>
+        <div class="d-flex" style="height: 40px;">
+  <div class="vr"></div>
+</div>
+          <li class="nav-item navbar-expand-lg ">
+              <form class="d-flex" role="search">&nbsp;
+      <input class="form-control me-2 border-0 focus-ring py-10 px-1" style="width:450px;border-style:none;" type="search" placeholder="What are you looking for?" aria-label="Search"><img src="search.png" width="25" height="25">
+    </form>
+        </li>&nbsp;
+        <div class="d-flex" style="height: 40px;">
+  <div class="vr"></div>
+</div>
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="border:0; background-color:white;"><img src="loc.png"> Store</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button style="border:0; background-color:white;"><img src="wish.png"> Wishlist</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button style="border:0; background-color:white;"><img src="cart.gif"> Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button style="border:0; background-color:white;"><img src="log.png"> Login</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<br><br><br>
+
+
+
+<nav class="navbar bg-body-light">
+      <div class="container">
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Mobiles & Accessories</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Smart Phones</b></a>
+                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropend" aria-expanded="false"><b>5G Phones</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Al Phones</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung Galaxy S24</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung Galaxy S23</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Google Pixel</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Xiaomi</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Oneplus</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Realme</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Vivo</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Oppo</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Nothing</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">View All</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Feature Phones</b></a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Accessories & Gadgets</b></a>
+                    <a href="#" class="dropbtn">Air Compressor</a>
+                    <a href="#" class="dropbtn">Back Cover & Cases</a>
+                    <a href="#" class="dropbtn">Tripod</a>
+                    <a href="#" class="dropbtn">Mobile Holder</a>
+                    <a href="#" class="dropbtn">Bluetooth Speaker</a>
+                    <a href="#" class="dropbtn">Cameras</a>
+                    <a href="#" class="dropbtn">Microphones</a>
+                    <a href="#" class="dropbtn">Mobile Charger</a>
+                    <a href="#" class="dropbtn">Cables</a>
+                    <a href="#" class="dropbtn">Memory Cards</a>
+                    <a href="#" class="dropbtn"iary bg-body-ter>Power Bank</a>
+                    <a href="#" class="dropbtn">Headsets & Earbuds</a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Tablets</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Apple</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Xiaomi</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Lenovo</a>
+                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Smart Watches</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Apple</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Xiaomi</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Realme</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Defy</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Fire-Boltt</a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="oppo.png" ><b >Exciting Offers</b><br><a href="#">Upto 30% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="iphn.png" style="height:150px; width:110px;"><b >iPhones</b><br><a href="#">Upto 18% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="1plus.png" style="height:150px; width:110px;"><b >One Plus</b><br><a href="#">&nbsp;</a></a></td>
+                    </tr>
+                </table>
+                </td>
+
+                </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Computers & Laptops</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Laptops</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">HP</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Lenovo</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Acer</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Dell</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Asus</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Avita</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">MSI</a>
+                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Gaming Laptop</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Notebook</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Business Laptop</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Thin & Light Laptop</a>
+                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Desktops</b></a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Printer & Scanners</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Pendrives</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Webcams</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Routers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>DVD writer</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>UPS</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>SSD</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>External Hard Disk</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Internal Hard Disk</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Playstation</b></a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Graphics Cards</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Processors</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>RAM</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Motherboard</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Cabinet</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>SMPS</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Keyboarda & Mice</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Monitors</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Projectors</b></a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="l1.png" style="height:150px; width:150px;"><b >Top Offers</b><br><a href="#">Upto 10% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="l2.png" style="height:150px; width:150px;"><b >Touch Screen Laptops</b><br><a href="#">Upto 20% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="l3.png" style="height:150px; width:150px;"><b >Printers</b><br><a href="#">Upto 20% Off</a></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Gaming Console</b></a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Apple Products</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>iPhones</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPhone 15</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPhone 14</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPhone 13</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>iPad</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPad Air</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPad Pro</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Avita</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">View All</a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Apple MacBook</b></a>
+                    <a href="#" class="dropbtn">Macbook Air</a>
+                    <a href="#" class="dropbtn">Macbook Pro</a>
+                    <a href="#" class="dropbtn">iMac</a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Accessories</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Apple TV</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Trackpad</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">AirTags</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Mouse</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Apple Pebcil</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">iPhone Backcases</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Tempered Glass</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Airpods & Earbuds</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Keyboards</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Apple Watches</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Adapters & Cables</a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="ip1.png" style="height:120px; width:120px;"><b >New Mac Book</b><br><a href="#">Upto 20% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="ip2.png" style="height:120px; width:120px;"><b >iPhones</b><br><a href="#">Upto 18% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="ip3.png" style="height:120px; width:120px;"><b >Smart Watches</b><br><a href="#">&nbsp;</a></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Television & Audios</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Television</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Samsung</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Sony</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">LG</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Mr Plus</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Lloyd</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">TCL</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">VU</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Mi TV</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">OnePlus</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Amstrad</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Hisense</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Haier</a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Budget Television</b></a>
+                    <a href="#" class="dropbtn">Oxview</a>
+                    <a href="#" class="dropbtn">Impex</a>
+                    <a href="#" class="dropbtn">Intex</a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Audio</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Bluetooth Speaker</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Home Theatre</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Soundbar</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Mouse</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Music Player</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Stabilizers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Television Accessories</b></a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="tv1.png" style="height:120px; width:120px;"><b >Top Brands</b><br><a href="#">Upto 40% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="tv2.png" style="height:120px; width:120px;"><b >Top Offer</b><br><a href="#">Upto 50% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="tv3.png" style="height:120px; width:120px;"><b >Home Theater</b><br><a href="#">Upto 30% Off</a></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Home Appliances</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Air Conditioners</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Fixed Speed ACs</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Inverter ACs</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Washing Machine</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Semi Automatic</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Top Loading</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Front Loading</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">Dryer</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Dishwasers</b></a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Refrigerator</b></a>
+                    <a href="#" class="dropbtn">Single Door</a>
+                    <a href="#" class="dropbtn">Double Door</a>
+                    <a href="#" class="dropbtn">Triple Door</a>
+                    <a href="#" class="dropbtn">Side By Side</a>
+                    <a href="#" class="dropbtn">Freezer</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Inverter</b></a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Television</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Vaccum Cleaner</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Air Cooler</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Iron Box</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Water Heater</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Fans</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Voltage Stabilizers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Water Dispenser</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Torches</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Air Purifier</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Pressure Washer</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Pulse Oximeter</b></a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="fr1.png"><b >Refrigerators</b><br><a href="#">Upto 20% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="fr2.png"><b >Offers On Washing Machine</b><br><a href="#">Upto 20% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="fr3.png"><b >Best Selling ACs</b><br><a href="#">upto 40% Off;</a></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Kitchen Appliances</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Mixer Grinder</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Wet Grinder</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Microwave Ovens</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Oven Toasted Grills(OTG)</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Blinder & Mixers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Juicer</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Food Processor</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Roti Maker</b></a>
+                  </td>
+                  <td>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Electric Kettles</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Air Fryer</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Toasters</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Sandwich Makers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Induction Cooktops</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Cooking Range</b></a>
+                  </td>
+                  <td class="bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><b>Choppers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Water Purifiers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Coffee Makers</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Soda Maker</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Hood & Hob</b></a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>Gas Stove</b></a>
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                    <td><a style="color:red;" href="#"><img src="ov1.png" style="height:120px; width:120px;"><b >Kitchen Appliances</b><br><a href="#">Upto 30% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="ov2.png" style="height:120px; width:120px;"><b >Mixer Grinder</b><br><a href="#">Upto 50% Off</a></a></td>
+                    <td><a style="color:red;" href="#"><img src="ov3.png" style="height:120px; width:120px;"><b >Microwave Oven</b><br><a href="#">Upto 30% Off</a></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Personal Care</a>
+            <div class="dropdown-content">
+
+
+            </div>
+        </div>
+
+
+
+        <div class="dropdown">
+          <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover">Latest Offers</a>
+            <div class="dropdown-content">
+              <table class="table">
+                <tr>
+                  <td class="container bg-body-tertiary">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropend" aria-expanded="false"><b>New Year Sale</b></a>
+                    <a href="#" class="dropbtn bg-body-tertiary">AC DISCOUNT SALE</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">IPHONE SALE</a>
+                    <a href="#" class="dropbtn bg-body-tertiary">IPAD SALE</a>
+                  </td>
+                  <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td>
+                <table>
+                    <tr>
+                      <td><a style="color:red;" href="#"><img src="la1.png" style="height:120px; width:120px;"><b >iPad Offers</b></a></td>
+                      <td><a style="color:red;" href="#"><img src="la2.png" style="height:120px; width:120px;"><b >AC Discount Sale</b></a></td>
+                      <td><a style="color:red;" href="#"><img src="la3.png" style="height:120px; width:120px;"><b >Buy Now</b></a></td>
+                    </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+      </div>
+</nav>
+
+
+<!-- dfghjkfghj -->
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <a href="#"><img src="dq.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox2.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox3.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox4.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox5.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox6.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="#"><img src="ox7.png" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+        <td><img src="a1.png" width="550px" height="450px"></td>
+        <td><img src="a1.png" width="550px" height="450px"></td>
+        <td><img src="a1.png" width="550px" height="450px"></td>
+        <td><img src="a1.png" width="550px" height="450px"></td>
+      <a href="#"><img src="ox8.png" class="d-block w-100" alt="..."></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+  <table>
+    <tr>
+      <td><div class="inline" style="background-color:#c21a09; color:white; width:120px;height:30px;">&nbsp;<b>Available EMIs<b></b></div></td>
+
+
+      <td><marquee style="height:30px;" direction="left" bahavior="alternate" loop="5"  bgcolor="#f7fcfe" scrollamount="4">
+        <img src="axis.png" style="width:60px;height:30px;line-height:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="sbi.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="yes.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="std.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="bar.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="kotak.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="rbl.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="hdfc.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="icici.jpeg" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="city.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="indus.jpeg" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="idbi.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="idfc.jpeg" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="kotak.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="rbl.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="hdfc.png" style="width:60px;height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </marquee></td>
+    </tr>
+</table>
+<br>
+
+
+  <div class="container">
+    <div class="row">
+    <div class="col ">
+
+    <button type="button" class="c1 btn btn-light rounded-0"><img src="req.png">Service Request</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+      <div class="col">
+    <button type="button" class=" c1 btn btn-light rounded-0"><img src="tra.png">Service Tracking</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="col">
+    <button type="button" class="c1 btn btn-light rounded-0"><img src="del.png">Delivery Tracking</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="col">
+    <button type="button" class="c1 btn btn-light rounded-0"><img src="poi.png">Loyality Points</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+
+
+<br>
+
+<table>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>
+<div class="container">
+  <h5><b>❄AC DISCOUNT SALE❄</b></h5>
+</div>
+    </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <a class="dropbtn link-offset-2 link-offset-3-hover link-underline-danger link-underline-opacity-0 link-underline-opacity-75-hover"><b>View All</b></a>
+    </td>
+  </tr>
+</table>
+
+
+
+<div class="container">
+<table>
+    <tr>
+        <td><br><div class="card borderless">
+      <a href="#"><img src="ac1.png" width="200px" height="380px" class="card-img-top" alt="..."></a>
+    </div></td>
+
+
+<td>
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1"
+                       href="#carouselExampleIndicators2"
+                       role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3"
+                       href="#carouselExampleIndicators2"
+                       role="button"
+                       data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2"
+                         class="carousel slide"
+                         data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+
+
+
+
+
+                                  <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;49%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Amstrad AC 1.5 Ton 3 Star Inverter Split Air Conditioner</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹33990</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹66990</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;38%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Bluestar 1 Ton 3 Star Inverter AC (IA312TNU)</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹31900</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹51500</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;31%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Godrej 1.5 Ton 3 Star Inverter Split AC (AC 1.5T...)</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹31490</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹45900</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;39%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Llyod 1.5 Ton 3 Star Spl Inverter | GLS1813FOSI</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹36490</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹56990</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;41%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Lloyd Split AC Inverter 1 Ton, 3 Star Classic...</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹28990</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹48990</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;33%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Godrej 1 Ton 3 Star Inverter Split AC Copper, AC 1T SIC...</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹27990</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹41900</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;44%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Voltas 2.0 Ton 3 Star Adjustable Inverter Split AC</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹44900</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹76990</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                             <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
+                                                 alt="100%x280" src="ab2.png">
+
+                                            <div class="card-img-overlay">
+                                          <div class="row">
+                                            <div class="col-3">
+                                          <p class="test rounded-circle" style="background-color:red; color:white; height:40px; width:40px; font-size:12px;">&nbsp;&nbsp;41%<br>&nbsp;&nbsp;off</p>
+                                        </div>
+                                            <div class="col-6">
+                                              <p style="color:green;width:100px;border-radius:8px;border:2px dotted green;"><img src="veri.png" height="20px" width="20px" style="color:green;">&nbsp;<b >In stock</b></p>
+                                            </div>
+                                              <div class="col-3">
+                                                <img src="heart.png">
+                                              </div>
+                                              <br><br><br><br>
+                                                <div class="test rounded-circle" style="background-color:black; color:skyblue; width:70px; height:70px;">
+                                                <p style="line-height:0.9;">
+                                                  <br>&nbsp;&nbsp;<b style="font-size:20px;">AC</b>
+                                                  &nbsp;<b style="font-size:7px;">DISCOUNT</b>
+                                                  &nbsp;<b style="font-size:15px;">SALE</b>
+                                                </p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                    <p align="center" class="inline">Voltas 2 Ton 5 Star, Inverter Split AC (Cooper,4-in-1, 24...)</p>
+                                                <p align="center" class="inline fs-5"><b><big>₹55900</big></b>&nbsp;<span class="text-decoration-line-through"><s>₹93990</s></span></p>
+                                                <div align="center">
+                                                    <a class="dropbtn link-underline link-underline-opacity-0" style="color:green;"><b>only few left</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+
+
+                                     <div class="col-3 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid "
